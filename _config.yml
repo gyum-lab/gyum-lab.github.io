@@ -1,7 +1,7 @@
 # 모든 이력 내용은 _data/data.yml 에서 수정합니다.
 
 # Site Settings
-title: Curriculum Vitae
+title: Gyumin Kim CV
 url: "https://gyum-lab.github.io"
 baseurl: "" # 저장소 이름으로 배포하면 '/저장소이름' 으로 변경
 description: Gyumin Kim — MS&PhD candidate at SeDA Lab, UNIST, working on physical design automation for 3D ICs and machine learning for EDA.

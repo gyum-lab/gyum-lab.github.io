@@ -21,7 +21,7 @@
       <div class="pub-body">
         <h3 class="pub-title">{% if p.link %}<a href="{{ p.link }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
         <p class="pub-authors">{{ authors }}</p>
-        <p class="pub-venue">{% if p.type %}<span class="badge badge-soft">{{ p.type }}</span>{% endif %}{% if p.status %}<span class="badge badge-status">{{ p.status }}</span>{% endif %}<em>{{ p.conference }}</em></p>
+        <p class="pub-venue">{% if p.type %}<span class="badge badge-soft">{{ p.type }}</span>{% endif %}{% if p.status %}<span class="badge badge-status{% if p.status contains 'Award' %} badge-award{% endif %}">{{ p.status }}</span>{% endif %}<em>{{ p.conference }}</em></p>
         {% if p.pdf or p.code or p.doi %}
         <div class="pub-links">
           {% if p.pdf %}<a href="{{ p.pdf }}" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i>PDF</a>{% endif %}
