@@ -71,6 +71,11 @@ experience:
   title: Research Experience
   info:
   - role: Visiting Researcher
+    time: Sep 2025 - Oct 2025
+    company: "Dept. of Electrical and Computer Engineering, University of Southern California (USC), Los Angeles, CA, USA, under Prof. Sung Kyu Lim"
+    details: |
+      Two-week research visit for collaboration (Sep 22 - Oct 4, 2025)
+  - role: Visiting Researcher
     time: Mar 2024 - Aug 2024
     company: "SeDA Lab, UNIST (Advisor: Prof. Heechun Park)"
   - role: Undergraduate Researcher
@@ -152,7 +157,7 @@ skills:
   title: Skills
   groups:
   - name: EDA Tools
-    items: [Cadence Innovus, Cadence Genus, Synopsys ICC2, Synopsys Design Compiler, Synopsys PrimeTime, Synopsys VCS, Synopsys Verdi]
+    items: [Cadence Innovus, Cadence Genus, Cadence Celsius, Synopsys ICC2, Synopsys Design Compiler, Synopsys PrimeTime, Synopsys VCS, Synopsys Verdi]
   - name: Programming
     items: [Python, C/C++, Tcl, PyTorch]
   - name: Tools & OS
