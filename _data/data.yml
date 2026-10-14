@@ -10,7 +10,7 @@ profile:
 
   name: Gyumin Kim
   tagline: MS&PhD Candidate, EE, UNIST
-  avatar:         # /assets/images/ 안의 사진 파일명 (비워두면 이니셜 표시)
+  avatar: profile.jpg # /assets/images/ 안의 사진 파일명 (비워두면 이니셜 표시)
   location: Ulsan, Republic of Korea
   available:      # 예: Open to internships (비워두면 숨김)
 
