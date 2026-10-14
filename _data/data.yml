@@ -20,7 +20,7 @@ profile:
   scholar: bqSVJPQAAAAJ # Google Scholar 주소의 user= 값
   website: https://sites.google.com/view/unist-seda
   website_label: SeDA Lab, UNIST
-  github: gyum-lab # GitHub 아이디
+  github:         # GitHub 아이디
   orcid:          # 0000-0000-0000-0000
   timezone: Asia/Seoul
 
@@ -44,7 +44,7 @@ about:
     Ulsan, Korea, working with Prof. Heechun Park in the Semiconductor Design Automation (SeDA) Lab.
     Gyumin's research focuses on physical design automation for 3D ICs, including face-to-face (F2F)
     hybrid bonding, monolithic 3D integration, and backside power delivery, and on applying
-    machine learning to electronic design automation. Gyumin received the Best Paper Award
+    machine learning to electronic design automation, particularly global routing. Gyumin received the Best Paper Award
     at MLCAD 2026.
   research_interests:
   - 3D IC Physical Design
@@ -52,7 +52,8 @@ about:
   - Monolithic 3D ICs
   - Backside Power Delivery
   - Thermal-Aware Placement
-  - Machine Learning for EDA
+  - AI for EDA
+  - Global Routing
 
 education:
   title: Education
@@ -151,7 +152,7 @@ skills:
   title: Skills
   groups:
   - name: EDA Tools
-    items: [Cadence Innovus, Cadence Genus, Synopsys ICC2, Synopsys PrimeTime]
+    items: [Cadence Innovus, Cadence Genus, Synopsys ICC2, Synopsys Design Compiler, Synopsys PrimeTime, Synopsys VCS, Synopsys Verdi]
   - name: Programming
     items: [Python, C/C++, Tcl, PyTorch]
   - name: Tools & OS
