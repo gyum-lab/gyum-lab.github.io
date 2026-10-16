@@ -22,7 +22,7 @@ interests:
       - Reinforcement learning for routing congestion mitigation and 3D via legalization
       - Graph neural networks for physical design optimization
       - Learning-based prediction for placement refinement and thermal analysis
-  - title: Standard cell layout generation
+      - Standard cell layout generation
 
 news:
   - text: Received the **Best Paper Award** at MLCAD 2026.
