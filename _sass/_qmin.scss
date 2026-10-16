@@ -270,11 +270,12 @@ hr.qm-rule {
   }
 
   .qm-pubtype {
-    font-family: $heading-font;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: $navy;
-    margin: 2.2rem 0 1rem;
+    font-family: "Lora", Georgia, serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #3a4a8a;
+    margin: 2.4rem 0 0.9rem;
   }
 
   ol.bibliography li {

@@ -534,7 +534,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,700|Outfit:400,500,600|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,700|Outfit:400,500,600|Lora:500i|Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:
