@@ -22,7 +22,6 @@ interests:
       - Reinforcement learning for routing congestion mitigation and 3D via legalization
       - Graph neural networks for physical design optimization
       - Learning-based prediction for placement refinement and thermal analysis
-      - Standard cell layout generation
 
 news:
   - text: Received the **Best Paper Award** at MLCAD 2026.
@@ -38,8 +37,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 Gyumin Kim received the B.S. degree in Electrical Engineering from Kookmin University,
 Seoul, Korea, in 2024, and is currently pursuing the integrated M.S. and Ph.D. degree in
 Electrical Engineering at the Ulsan National Institute of Science and Technology (UNIST),
-Ulsan, Korea, working with Prof. Heechun Park in the Semiconductor Design Automation (SeDA) Lab.
-Gyumin's research focuses on physical design automation for 3D ICs, including face-to-face (F2F)
-hybrid bonding, monolithic 3D integration, and backside power delivery, and on applying
-machine learning to electronic design automation, particularly global routing. Gyumin received the Best Paper Award
-at MLCAD 2026.
+Ulsan, Korea, under the supervision of Prof. Heechun Park in the Semiconductor Design Automation (SeDA) Lab.
+Gyumin's research focuses on physical design methodologies for 3D integration, including
+face-to-face (F2F) hybrid bonding, monolithic 3D (M3D) ICs, and heterogeneous 3D ICs;
+backside power and clock delivery for advanced technology nodes; and machine learning for
+electronic design automation (ML-EDA), with reinforcement learning and graph neural networks
+for physical design. Gyumin received the Best Paper Award at MLCAD 2026.
