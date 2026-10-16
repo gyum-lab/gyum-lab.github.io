@@ -1,0 +1,39 @@
+# Content of the CV page (_pages/cv.md). Dates are shown as written.
+education:
+  - date: Sep 2024 – Present
+    title: M.S.–Ph.D. Integrated Program in Electrical Engineering
+    org: Ulsan National Institute of Science and Technology (UNIST)
+    details: "Semiconductor Design Automation (SeDA) Lab, advisor: Prof. Heechun Park"
+  - date: Aug 2024
+    title: B.S. in Electrical Engineering
+    org: Kookmin University
+
+experience:
+  - date: Sep 2025 – Oct 2025
+    title: Visiting Researcher
+    org: Dept. of Electrical and Computer Engineering, University of Southern California (USC)
+    details: "Two-week research visit for collaboration with Prof. Sung Kyu Lim (Sep 22 – Oct 4, 2025)"
+  - date: Mar 2024 – Aug 2024
+    title: Visiting Researcher
+    org: SeDA Lab, UNIST
+    details: "Advisor: Prof. Heechun Park"
+  - date: Sep 2023 – Feb 2024
+    title: Undergraduate Researcher
+    org: SeDA Lab, Kookmin University
+    details: "Advisor: Prof. Heechun Park"
+
+awards:
+  - date: Sep 2026
+    title: Best Paper Award, MLCAD 2026
+    org: ACM/IEEE International Symposium on Machine Learning for CAD (MLCAD)
+    details: '"Segment-Level Rerouting with Reinforcement Learning for Routing Congestion Mitigation"'
+
+skills:
+  - name: EDA Tools
+    items: Cadence Innovus, Cadence Genus, Cadence Celsius, Synopsys ICC2, Synopsys Design Compiler, Synopsys PrimeTime, Synopsys VCS, Synopsys Verdi
+  - name: Programming
+    items: Python, C/C++, Tcl, PyTorch
+  - name: Tools & OS
+    items: Linux, Git
+  - name: Languages
+    items: Korean (native), English (intermediate)
