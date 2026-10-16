@@ -22,6 +22,11 @@ experience:
     org: SeDA Lab, Kookmin University
     details: "Advisor: Prof. Heechun Park"
 
+teaching:
+  - date: Fall 2024
+    title: Teaching Assistant
+    org: Digital Logic and Laboratory (EEE20201, EEE20202), UNIST
+
 awards:
   - date: Sep 2026
     title: Best Paper Award, MLCAD 2026
@@ -34,6 +39,4 @@ skills:
   - name: Programming
     items: Python, C/C++, Tcl, PyTorch
   - name: Tools & OS
-    items: Linux, Git
-  - name: Languages
-    items: Korean (native), English (intermediate)
+    items: Linux

@@ -8,10 +8,21 @@ profile:
   image: prof_pic.jpg
 
 interests:
-  - 3D IC physical design — F2F hybrid bonding, monolithic 3D integration
-  - Backside power delivery
-  - Thermal-aware placement
-  - AI for EDA — global routing
+  - title: Physical design methodologies for 3D integration
+    items:
+      - Hybrid-bonded face-to-face (F2F) 3D ICs — tier partitioning and 3D via legalization
+      - Unified design flows for homogeneous and heterogeneous 3D ICs
+      - Monolithic 3D ICs — thermal-aware placement and cross-tier routability
+  - title: Backside design methodologies for advanced technology nodes
+    items:
+      - Backside power delivery network (BS-PDN) optimization for F2F 3D ICs
+      - Backside clock distribution network (BS-CDN) synthesis
+  - title: Machine learning for electronic design automation (ML-EDA)
+    items:
+      - Reinforcement learning for routing congestion mitigation and 3D via legalization
+      - Graph neural networks for physical design optimization
+      - Learning-based prediction for placement refinement and thermal analysis
+  - title: Standard cell layout generation
 
 news:
   - text: Received the **Best Paper Award** at MLCAD 2026.

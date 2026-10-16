@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Publications in reverse chronological order.
+description: Journal articles and conference papers, newest first.
 nav: true
 nav_order: 2
 ---
@@ -13,8 +13,14 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
-<div class="publications">
+<div class="publications qm-pubs">
 
-{% bibliography %}
+<h2 class="qm-pubtype">Journal Articles</h2>
+
+{% bibliography --query @article %}
+
+<h2 class="qm-pubtype">Conference Papers</h2>
+
+{% bibliography --query @inproceedings %}
 
 </div>

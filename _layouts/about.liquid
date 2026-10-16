@@ -36,7 +36,16 @@ layout: default
       <h2>Research interests</h2>
       <ul class="qm-interests">
         {% for item in page.interests %}
-          <li>{{ item }}</li>
+          <li>
+            {{ item.title }}
+            {% if item.items %}
+              <ul>
+                {% for sub in item.items %}
+                  <li>{{ sub }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
         {% endfor %}
       </ul>
     {% endif %}

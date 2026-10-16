@@ -15,9 +15,6 @@ $band: linear-gradient(90deg, #d5e3fb 0%, #d8e0fa 60%, #dddcf8 100%); // pale bl
 $heading-font: "Outfit", "Nunito Sans", system-ui, sans-serif;
 $body-font: "Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
 
-// shoreline wave tile used on top of the footer (120 x 14)
-$wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='14' viewBox='0 0 120 14'%3E%3Cpath d='M0 14V7Q15 0 30 7T60 7T90 7T120 7V14Z'/%3E%3C/svg%3E");
-
 :root {
   --global-bg-color: #ffffff;
   --global-card-bg-color: #ffffff;
@@ -189,6 +186,27 @@ hr.qm-rule {
   li::marker {
     color: $accent;
   }
+
+  > li {
+    font-weight: 600;
+    color: $navy;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+    margin: 0.3rem 0 0.6rem;
+    font-weight: 400;
+    color: $ink;
+
+    li {
+      margin-bottom: 0.2rem;
+    }
+
+    li::marker {
+      color: $muted;
+      content: "– ";
+    }
+  }
 }
 
 .qm-news {
@@ -235,15 +253,28 @@ hr.qm-rule {
 .publications {
   margin-top: 0;
 
+  // year groups: no year label, just a short thin rule between years
   h2.bibliography {
-    font-family: $heading-font;
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: $link;
-    text-align: left;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    width: 3rem;
+    border: 0;
     border-top: 1px solid $rule;
-    padding-top: 1.4rem;
-    margin-top: 1.8rem;
+    margin: 0.4rem 0 1.4rem;
+    padding: 0;
+  }
+
+  .qm-pubtype + h2.bibliography {
+    display: none;
+  }
+
+  .qm-pubtype {
+    font-family: $heading-font;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $navy;
+    margin: 2.2rem 0 1rem;
   }
 
   ol.bibliography li {
@@ -359,23 +390,5 @@ hr.qm-rule {
   .qm-cv-row {
     grid-template-columns: 1fr;
     gap: 0.1rem;
-  }
-}
-
-// ---------- footer: shoreline ----------
-footer.fixed-bottom {
-  background: $band;
-  border-top: 0;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -13px;
-    height: 14px;
-    background: $band;
-    -webkit-mask: $wave repeat-x 0 0 / 120px 14px;
-    mask: $wave repeat-x 0 0 / 120px 14px;
   }
 }
