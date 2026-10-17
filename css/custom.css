@@ -20,6 +20,7 @@ html {
   height: 190px;
   object-fit: cover;
   object-position: 50% 50%;
+  border: 1px solid #e3e6ea; /* white photo background: keep the circle visible */
 }
 
 #profile .portrait-title h3 a {
