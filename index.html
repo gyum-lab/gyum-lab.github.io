@@ -165,12 +165,15 @@
       <ul class="ul-papers">
         {% for p in gpubs %}
         <li>
+          <div class="pub-thumb">
+            {% if p.image %}<img src="./{{ p.image }}" alt="Representative figure" loading="lazy">{% else %}<span class="pub-thumb-empty"><i class="far fa-file-alt"></i></span>{% endif %}
+          </div>
           <div class="description">
             <p class="title">{{ p.title }}</p>
             <p class="authors">{{ p.authors | replace: "Gyumin Kim", "<b>Gyumin Kim</b>" }}</p>
-            <p class="venue">{{ p.short }}{% if p.award %} <span class="pub-award">{{ p.award }} 🏆</span>{% endif %}{% if p.note %} <span class="pub-note">🎉 {{ p.note }}</span>{% endif %}</p>
+            <p class="venue">{{ p.short }}{% if p.note %} <span class="pub-note">🎉 {{ p.note }}</span>{% endif %}{% if p.award %} <span class="pub-award">🏆 {{ p.award }}</span>{% endif %}</p>
             {% if p.doi %}
-            <p class="pub-links">[ <a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a> ]</p>
+            <p class="resources"><a class="pill" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a></p>
             {% endif %}
           </div>
         </li>

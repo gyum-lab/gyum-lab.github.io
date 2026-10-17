@@ -31,6 +31,7 @@ Almost everything on the page lives in two data files, so most edits never touch
   note: Accepted                           # optional; shown as "🎉 Accepted"
   award: Best Paper Award                  # optional; shown in red with 🏆
   doi: 10.xxxx/xxxxx                       # optional; real DOIs only
+  image: images/papers/xxx.jpg             # optional; representative figure (left thumbnail)
 ```
 
 Keep entries newest first. Once a conference has taken place, remove `note: Accepted`. Add `doi` once the paper has a DOI.
