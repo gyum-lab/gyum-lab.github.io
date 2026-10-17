@@ -25,18 +25,18 @@ news:
 interests:
   - title: Physical design methodologies for 3D integration
     items:
-      - Hybrid-bonded face-to-face (F2F) 3D ICs — tier partitioning and 3D via legalization
-      - Unified design flows for homogeneous and heterogeneous 3D ICs
-      - Monolithic 3D ICs — thermal-aware placement and cross-tier routability
+      - Hybrid-bonded face-to-face (F2F) 3D ICs
+      - Monolithic 3D (M3D) ICs
+      - Homogeneous and heterogeneous 3D integration
   - title: Backside design methodologies for advanced technology nodes
     items:
-      - Backside power delivery network (BS-PDN) optimization for F2F 3D ICs
-      - Backside clock distribution network (BS-CDN) synthesis
+      - Backside power delivery network (BS-PDN)-aware physical design
+  - title: Power-, thermal-, and routability-aware physical design
   - title: Machine learning for electronic design automation (ML-EDA)
     items:
-      - Reinforcement learning for routing congestion mitigation and 3D via legalization
-      - Graph neural networks for physical design optimization
-      - Learning-based prediction for placement refinement and thermal analysis
+      - Reinforcement learning for physical design optimization
+      - Graph neural networks for physical design
+      - Learning-based design quality prediction
 
 education:
   - degree: M.S.–Ph.D. Integrated Program in Electrical Engineering
