@@ -33,11 +33,8 @@
     <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
       <ul class="navbar-nav d-md-inline-flex">
         <li class="nav-item"><a class="nav-link" href="#about"><span>Home</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#news"><span>News</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#research"><span>Research</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience"><span>Experience</span></a></li>
         <li class="nav-item"><a class="nav-link" href="#papers"><span>Publications</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#teaching"><span>Teaching</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#activities"><span>Activities</span></a></li>
         <li class="nav-item"><a class="nav-link" href="#awards"><span>Awards &amp; Honors</span></a></li>
       </ul>
     </div>
@@ -68,21 +65,17 @@
       </div>
 
       <div class="col-12 col-lg-8">
-        <p class="greeting">Welcome! 👋</p>
+        <p class="greeting">Hello, Welcome :)</p>
         <p>
-          I am an integrated M.S.–Ph.D. student in the Department of Electrical Engineering at the
-          <a href="https://www.unist.ac.kr" target="_blank" rel="noopener"><b>Ulsan National Institute of Science and Technology (UNIST)</b></a>,
-          advised by Prof. <a href="https://sites.google.com/view/unist-seda/members/professor" target="_blank" rel="noopener"><b>Heechun Park</b></a>
-          in the Semiconductor Design Automation (SeDA) Lab. I received my B.S. in Electrical Engineering from
-          Kookmin University in 2024.
+          My name is Gyumin Kim (김규민), an integrated M.S.–Ph.D. student in Electrical Engineering at
+          <a href="https://www.unist.ac.kr" target="_blank" rel="noopener"><b>UNIST</b></a>, advised by professor
+          <a href="https://sites.google.com/view/unist-seda/members/professor" target="_blank" rel="noopener"><b>Heechun Park</b></a>
+          in the Semiconductor Design Automation (SeDA) Lab.
         </p>
         <p>
-          I am broadly interested in <b>physical design automation for next-generation integrated circuits</b>, with a
-          particular focus on <b>3D integration</b>, including face-to-face (F2F) hybrid bonding, monolithic 3D (M3D),
-          and heterogeneous 3D ICs, and on <b>backside power delivery</b> for advanced technology nodes.
-          I am also interested in <b>machine learning for EDA</b>, applying reinforcement learning and graph neural
-          networks to physical design problems. My work on RL-based segment-level rerouting received the
-          <b class="bpa-text">Best Paper Award</b> at MLCAD 2026.
+          My research interests include physical design automation for 3D integration, backside power delivery,
+          power-, thermal-, and routability-aware physical design, and machine learning for EDA.
+          My work on RL-based segment-level rerouting received the <b class="bpa-text">Best Paper Award</b> at MLCAD 2026.
         </p>
 
         <div class="row">
@@ -106,10 +99,8 @@
               <li>
                 <i class="fa-li fas fa-graduation-cap"></i>
                 <div class="description">
-                  <p class="course">{{ e.degree }}</p>
-                  <p class="institution">{{ e.date }}</p>
-                  <p class="institution">{{ e.school }}</p>
-                  {% if e.details %}<p class="institution">{{ e.details }}</p>{% endif %}
+                  <p class="course">{{ e.degree }}, {{ e.date }}</p>
+                  <p class="institution">{{ e.school }}{% if e.details %} · {{ e.details }}{% endif %}</p>
                 </div>
               </li>
               {% endfor %}
@@ -122,19 +113,19 @@
 </section>
 
 <!-- News -->
-<section id="news" class="home-section">
+<section id="news" class="home-section bg-alt">
   <div class="container">
     <h3>Recent News</h3>
     <ul class="ul-news">
       {% for n in cv.news %}
-      <li><span class="news-date">[{{ n.date }}]</span> {{ n.text }}</li>
+      <li>[{{ n.date }}] {{ n.text }}</li>
       {% endfor %}
     </ul>
   </div>
 </section>
 
-<!-- Research interests -->
-<section id="research" class="home-section">
+<!-- Research interests + experience -->
+<section id="experience" class="home-section">
   <div class="container">
     <h1>Research Interests</h1>
     <ul class="ul-interests">
@@ -142,19 +133,12 @@
       <li>
         <b>{{ r.title }}</b>
         {% if r.items %}
-        <ul>
-          {% for i in r.items %}<li>{{ i }}</li>{% endfor %}
-        </ul>
+        <ul>{% for i in r.items %}<li>{{ i }}</li>{% endfor %}</ul>
         {% endif %}
       </li>
       {% endfor %}
     </ul>
-  </div>
-</section>
 
-<!-- Experience -->
-<section id="experience" class="home-section">
-  <div class="container">
     <h1>Research Experience</h1>
     <ul class="ul-timeline">
       {% for x in cv.experience %}
@@ -168,71 +152,61 @@
 </section>
 
 <!-- Publications -->
-<section id="papers" class="home-section">
+<section id="papers" class="home-section bg-alt">
   <div class="container">
     <h1>Publications</h1>
-    <div class="pub-filter" role="group" aria-label="Filter publications">
-      <button type="button" class="pub-filter-btn active" data-filter="all">All</button>
-      <button type="button" class="pub-filter-btn" data-filter="first">First Author</button>
-    </div>
-
     {% assign groups = "journal:Journal Articles,conference:Conference Papers" | split: "," %}
     {% for g in groups %}
       {% assign gtype = g | split: ":" | first %}
       {% assign glabel = g | split: ":" | last %}
       {% assign gpubs = site.data.publications | where: "type", gtype %}
       {% if gpubs.size > 0 %}
-      <div class="pub-group">
-        <h2 class="pub-type">{{ glabel }}</h2>
-        <ul class="ul-papers">
-          {% for p in gpubs %}
-          <li{% if p.first_author %} class="first-author"{% endif %}>
-            <div class="description">
-              <p class="title">{{ p.title }}</p>
-              <p class="authors">{{ p.authors | replace: "Gyumin Kim", "<b>Gyumin Kim</b>" }}</p>
-              <p class="venue">{{ p.venue }}{% if p.note %} <span class="pub-note">🎉 {{ p.note }}</span>{% endif %}{% if p.award %} <span class="pub-award">🏆 {{ p.award }}</span>{% endif %}</p>
-              {% if p.doi %}
-              <p class="resources"><a class="pill" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a></p>
-              {% endif %}
-            </div>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
+      <h2 class="sub-head">{{ glabel }}</h2>
+      <ul class="ul-papers">
+        {% for p in gpubs %}
+        <li>
+          <div class="description">
+            <p class="title">{{ p.title }}</p>
+            <p class="authors">{{ p.authors | replace: "Gyumin Kim", "<b>Gyumin Kim</b>" }}</p>
+            <p class="venue">{{ p.short }}{% if p.award %} <span class="pub-award">{{ p.award }} 🏆</span>{% endif %}{% if p.note %} <span class="pub-note">🎉 {{ p.note }}</span>{% endif %}</p>
+            {% if p.doi %}
+            <p class="pub-links">[ <a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a> ]</p>
+            {% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
       {% endif %}
     {% endfor %}
   </div>
 </section>
 
-<!-- Teaching -->
-<section id="teaching" class="home-section">
+<!-- Activities -->
+<section id="activities" class="home-section">
   <div class="container">
-    <h1>Teaching</h1>
-    <ul class="ul-timeline">
+    <h2 class="sub-head">Teaching Experience</h2>
+    <ul>
       {% for t in cv.teaching %}
-      <li>
-        <div class="tl-row"><span><b>{{ t.course }}</b>, {{ t.place }}</span><span class="tl-date">{{ t.date }}</span></div>
-        <div>{{ t.role }}</div>
-      </li>
+      <li><b>{{ t.role }}</b>, {{ t.course }}, {{ t.place }} ({{ t.date }})</li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="sub-head">Skills</h2>
+    <ul>
+      {% for s in cv.skills %}
+      <li><b>{{ s.name }}</b>: {{ s.items }}</li>
       {% endfor %}
     </ul>
   </div>
 </section>
 
-<!-- Awards & skills -->
-<section id="awards" class="home-section">
+<!-- Awards -->
+<section id="awards" class="home-section bg-alt">
   <div class="container">
     <h1>Awards &amp; Honors</h1>
-    <ul class="ul-timeline">
+    <ul>
       {% for a in cv.awards %}
-      <li><div class="tl-row"><span>{{ a.text }}</span><span class="tl-date">{{ a.date }}</span></div></li>
-      {% endfor %}
-    </ul>
-
-    <h1 class="mt-5">Skills</h1>
-    <ul class="ul-skills">
-      {% for s in cv.skills %}
-      <li><b>{{ s.name }}:</b> {{ s.items }}</li>
+      <li>{{ a.text }} ({{ a.date }})</li>
       {% endfor %}
     </ul>
   </div>

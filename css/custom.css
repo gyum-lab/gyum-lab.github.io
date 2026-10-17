@@ -5,9 +5,16 @@ html {
   scroll-padding-top: 70px;
 }
 
-.home-section {
+/* White sections, with gray bands only where marked (News, Publications, Awards) */
+.home-section,
+.home-section:nth-of-type(even) {
+  background-color: #fff;
   padding: 40px 0;
   animation: none; /* theme fades sections in from opacity 0; show them at once */
+}
+
+.home-section.bg-alt {
+  background-color: #f7f7f7;
 }
 
 #about.home-section {
@@ -23,10 +30,6 @@ html {
   border: 1px solid #e3e6ea; /* white photo background: keep the circle visible */
 }
 
-#profile .portrait-title h3 a {
-  font-weight: 700;
-}
-
 .profile-links {
   text-align: center;
   margin-top: 1rem;
@@ -37,33 +40,24 @@ html {
   margin-left: 2px;
 }
 
-#about .col-lg-8 > p:first-child {
+.greeting {
+  font-weight: 700;
   margin-top: 1.2rem;
 }
 
-.greeting {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: 0.6rem;
-}
-
-/* ---------- news ---------- */
-.ul-news {
+/* ---------- lists ---------- */
+.ul-news,
+.ul-interests,
+.ul-timeline {
   padding-left: 1.2rem;
-  margin: 0;
 }
 
 .ul-news li {
   margin-bottom: 0.25rem;
 }
 
-.news-date {
-  font-variant-numeric: tabular-nums;
-}
-
-/* ---------- research interests ---------- */
-.ul-interests {
-  padding-left: 1.2rem;
+ul.ul-interests li {
+  font-size: 1rem; /* theme sets 0.9rem for this list */
 }
 
 .ul-interests > li {
@@ -73,11 +67,6 @@ html {
 .ul-interests ul {
   padding-left: 1.4rem;
   list-style: circle;
-}
-
-/* ---------- experience / teaching / awards: text left, date right ---------- */
-.ul-timeline {
-  padding-left: 1.2rem;
 }
 
 .ul-timeline > li {
@@ -102,49 +91,19 @@ html {
   }
 }
 
-/* ---------- publications ---------- */
-.pub-filter {
-  display: inline-flex;
-  gap: 4px;
-  padding: 4px;
-  margin: 0.6rem 0 0.4rem;
-  background: #eef0f3;
-  border-radius: 10px;
+#experience h1 + ul {
+  margin-bottom: 2rem;
 }
 
-.pub-filter-btn {
-  border: 0;
-  background: transparent;
-  padding: 6px 18px;
-  border-radius: 7px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #6b7280;
-  cursor: pointer;
-}
-
-.pub-filter-btn:hover {
-  color: #1f2937;
-}
-
-.pub-filter-btn.active {
-  background: #fff;
-  color: #111827;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
-}
-
-.pub-filter-btn:focus-visible {
-  outline: 2px solid #2962ff;
-  outline-offset: 2px;
-}
-
-.pub-type {
+/* Smaller section sub-headings (Journal Articles, Teaching Experience, ...) */
+.sub-head {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.35rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  margin: 1.8rem 0 0;
+  margin: 1.6rem 0 0.6rem;
 }
 
+/* ---------- publications ---------- */
 .ul-papers {
   padding-left: 0;
 }
@@ -161,61 +120,18 @@ html {
   color: #1a1a1a;
 }
 
+.pub-award,
+.bpa-text {
+  color: #9e3b34;
+  font-weight: 700;
+}
+
 .pub-note {
+  color: #6b7280;
   font-weight: 600;
-  color: #5b6b7f;
   margin-left: 0.2rem;
 }
 
-/* Best Paper Award: muted brick red on a soft tint */
-.pub-award {
-  display: inline-block;
-  margin-left: 0.35rem;
-  padding: 0 10px;
-  border-radius: 999px;
-  background: #f8ebe9;
-  border: 1px solid #ecd0cc;
-  color: #9e3b34;
-  font-weight: 700;
-  font-size: 0.92em;
-  line-height: 1.6;
-}
-
-.bpa-text {
-  color: #9e3b34;
-}
-
-.ul-papers .resources {
-  margin-top: 0.35rem !important;
-}
-
-.pill {
-  display: inline-block;
-  padding: 2px 12px;
-  border-radius: 999px;
-  border: 1px solid #c5cad0;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #374151;
-  background: #f6f7f9;
-}
-
-.pill:hover {
-  text-decoration: none;
-  border-color: #2962ff;
-  color: #2962ff;
-  background: #fff;
-}
-
-.pub-hidden {
-  display: none !important;
-}
-
-/* ---------- skills ---------- */
-.ul-skills {
-  padding-left: 1.2rem;
-}
-
-ul.ul-interests li {
-  font-size: 1rem; /* theme sets 0.9rem for this list */
+.ul-papers .pub-links {
+  margin-top: 0.15rem !important;
 }
