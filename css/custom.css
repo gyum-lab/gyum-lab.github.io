@@ -146,9 +146,9 @@ ul.ul-interests li {
   object-fit: contain;
 }
 
-.pub-thumb-empty {
-  color: #c4c9d0;
-  font-size: 2rem;
+/* papers without a figure: keep the column so titles stay aligned, but draw nothing */
+.pub-thumb-spacer {
+  flex: 0 0 200px;
 }
 
 @media (max-width: 575.98px) {
@@ -163,8 +163,8 @@ ul.ul-interests li {
     height: 170px;
   }
 
-  .pub-thumb:has(.pub-thumb-empty) {
-    display: none !important;
+  .pub-thumb-spacer {
+    display: none;
   }
 }
 
