@@ -4,7 +4,6 @@
 #   note:         e.g. Accepted (conference not held yet); shown after the venue
 #   award:        shown in red after the venue
 #   doi:          real DOI only; leave out until the paper has one
-#   image:        optional thumbnail path, e.g. images/papers/xxx.png
 
 - title: "Advances and Future Challenges in Monolithic 3D Integrated Logic, Power, and Optoelectronics Technologies for Tightly Interconnected Intelligent Systems"
   authors: "H. Jung, J. Choi, S. Baek, B. G. Shin, Y. J. Song*, H. Jung, J. Kim, J. Jeon*, Gyumin Kim, Heechun Park*, Y. Lee, J. Yoo*, J.-H. Lee, H. Kim, K. Kang*, J. Jeong, S. H. Kim*, J. Bae, C. S. Kim, W. K. Yang, S. Lee, J. Kwon*, B.-S. Kim, J.-H. Han*, H.-J. Kim, H. H. Yoon*, J. Kwon*, and Y. J. Hong*"
@@ -18,7 +17,6 @@
   type: conference
   first_author: true
   note: Accepted
-  image: images/papers/aspdac27_pdn.jpg
 
 - title: "Comprehensive BS-CDN Synthesis Framework with GNN Clustering and MILP-Based Optimization"
   authors: "Ikkyum Kim, Junghyun Yoon, Gyumin Kim, Jooyeon Jeong, and Heechun Park"
@@ -32,14 +30,12 @@
   type: conference
   first_author: true
   note: Accepted
-  image: images/papers/iccad26_thermal.jpg
 
 - title: "Prediction-Guided Placement Refinement for Cross-Tier Routability in Monolithic 3D ICs"
   authors: "Gyumin Kim and Heechun Park"
   venue: "ACM/IEEE International Symposium on Machine Learning for CAD (MLCAD), 2026"
   type: conference
   first_author: true
-  image: images/papers/mlcad26_m3d.jpg
 
 - title: "Segment-Level Rerouting with Reinforcement Learning for Routing Congestion Mitigation"
   authors: "Gyumin Kim and Heechun Park"
@@ -47,7 +43,6 @@
   type: conference
   first_author: true
   award: Best Paper Award
-  image: images/papers/mlcad26_reroute.jpg
 
 - title: "Standard Cell Layout Generation: Methodological Evolution and Architectural Impacts"
   authors: "Junghyun Yoon, Ikkyum Kim, Gyumin Kim, Sojung Park, and Heechun Park"
@@ -61,7 +56,6 @@
   type: conference
   first_author: true
   doi: 10.1109/ICCAD66269.2025.11240974
-  image: images/papers/iccad25_unified.jpg
 
 - title: "Clustering-Driven Bonding Terminal Legalization with Reinforcement Learning for F2F 3D ICs"
   authors: "Gyumin Kim and Heechun Park"
@@ -69,4 +63,3 @@
   type: conference
   first_author: true
   doi: 10.1145/3658617.3703136
-  image: images/papers/aspdac25_legal.jpg
