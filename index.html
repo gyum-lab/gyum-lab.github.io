@@ -68,20 +68,21 @@
       </div>
 
       <div class="col-12 col-lg-8">
+        <p class="greeting">Welcome! 👋</p>
         <p>
-          I am an integrated M.S.–Ph.D. student in Electrical Engineering at the
-          <a href="https://www.unist.ac.kr" target="_blank" rel="noopener"><b>Ulsan National Institute of Science and Technology (UNIST)</b></a>,
-          advised by Prof. <a href="https://sites.google.com/view/unist-seda" target="_blank" rel="noopener"><b>Heechun Park</b></a>
-          in the Semiconductor Design Automation (SeDA) Lab. I received the B.S. degree in Electrical Engineering
+          Hi, I'm Gyumin. I'm an integrated M.S.–Ph.D. student in Electrical Engineering at
+          <a href="https://www.unist.ac.kr" target="_blank" rel="noopener"><b>UNIST</b></a>, where I work with
+          Prof. <a href="https://sites.google.com/view/unist-seda" target="_blank" rel="noopener"><b>Heechun Park</b></a>
+          in the Semiconductor Design Automation (SeDA) Lab. Before that, I received my B.S. in Electrical Engineering
           from Kookmin University in 2024.
         </p>
         <p>
-          My research focuses on <b>physical design methodologies for 3D integration</b>, including face-to-face (F2F)
-          hybrid bonding, monolithic 3D (M3D) ICs, and heterogeneous 3D ICs; <b>backside power and clock delivery</b>
-          for advanced technology nodes; and <b>machine learning for electronic design automation (ML-EDA)</b>, with
-          reinforcement learning and graph neural networks for physical design.
-          I received the <b>Best Paper Award</b> at MLCAD 2026.
+          My research is about making 3D chips easier to design. I work on <b>physical design for 3D integration</b>
+          (F2F hybrid bonding, monolithic 3D, and heterogeneous 3D ICs), <b>backside power and clock delivery</b>,
+          and <b>machine learning for EDA</b>, using reinforcement learning and graph neural networks for physical design.
+          Our work on RL-based rerouting received the <b class="bpa-text">Best Paper Award</b> at MLCAD 2026 🏆.
         </p>
+        <p>Feel free to reach out if you'd like to talk about research!</p>
 
         <div class="row">
           <div class="col-md-6">
@@ -188,7 +189,7 @@
             <div class="description">
               <p class="title">{{ p.title }}</p>
               <p class="authors">{{ p.authors | replace: "Gyumin Kim", "<b>Gyumin Kim</b>" }}</p>
-              <p class="venue">{{ p.venue }}{% if p.note %} <span class="pub-note">({{ p.note }})</span>{% endif %}{% if p.award %} <span class="pub-award"><i class="fas fa-award"></i> {{ p.award }}</span>{% endif %}</p>
+              <p class="venue">{{ p.venue }}{% if p.note %} <span class="pub-note">🎉 {{ p.note }}</span>{% endif %}{% if p.award %} <span class="pub-award">🏆 {{ p.award }}</span>{% endif %}</p>
               {% if p.doi %}
               <p class="resources"><a class="pill" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a></p>
               {% endif %}

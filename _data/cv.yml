@@ -2,11 +2,11 @@
 
 news:
   - date: Sep 2026
-    text: Received the <b>Best Paper Award</b> at <b>MLCAD 2026</b>.
+    text: 🏆 Received the <b class="bpa-text">Best Paper Award</b> at <b>MLCAD 2026</b>!
   - date: Sep 2025
-    text: Visited Prof. Sung Kyu Lim's group at <b>USC</b> as a visiting researcher.
+    text: ✈️ Visited Prof. Sung Kyu Lim's group at <b>USC</b> as a visiting researcher.
   - date: Sep 2024
-    text: Started the integrated M.S.–Ph.D. program at <b>UNIST</b>.
+    text: 🎓 Started the integrated M.S.–Ph.D. program at <b>UNIST</b>.
 
 interests:
   - title: Physical design methodologies for 3D integration
@@ -59,7 +59,7 @@ teaching:
 
 awards:
   - date: Sep 2026
-    text: <b>Best Paper Award</b>, ACM/IEEE International Symposium on Machine Learning for CAD (MLCAD) 2026
+    text: 🏆 <b class="bpa-text">Best Paper Award</b>, ACM/IEEE International Symposium on Machine Learning for CAD (MLCAD) 2026
 
 skills:
   - name: EDA Tools
