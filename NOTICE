@@ -1,0 +1,9 @@
+This site's layout and css/academic.css are adapted from the chojw.github.io
+template (https://github.com/chojw/chojw.github.io), licensed under the
+Apache License 2.0 (see LICENSE). Changes: page content replaced, sections
+rebuilt as a Jekyll page driven by _data/*.yml, and site-specific styles and
+scripts added in css/custom.css and js/site.js.
+
+css/academic.css bundles:
+- Source Themes Academic v4.7.0 (https://github.com/gcushen/hugo-academic), MIT License
+- Bootstrap v4.4.1 (https://getbootstrap.com/), MIT License

@@ -1,0 +1,249 @@
+/* Site-specific styles on top of css/academic.css (Academic 4.7.0 theme). */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+.home-section {
+  padding: 40px 0;
+  animation: none; /* theme fades sections in from opacity 0; show them at once */
+}
+
+#about.home-section {
+  padding-top: 50px;
+}
+
+/* ---------- home ---------- */
+#profile .avatar {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  object-position: 50% 18%;
+}
+
+#profile .portrait-title h3 a {
+  font-weight: 700;
+}
+
+.profile-links {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.profile-links .fa-download {
+  font-size: 0.85em;
+  margin-left: 2px;
+}
+
+#about .col-lg-8 > p:first-child {
+  margin-top: 1.2rem;
+}
+
+/* ---------- news ---------- */
+.ul-news {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.ul-news li {
+  margin-bottom: 0.25rem;
+}
+
+.news-date {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- research interests ---------- */
+.ul-interests {
+  padding-left: 1.2rem;
+}
+
+.ul-interests > li {
+  margin-bottom: 0.5rem;
+}
+
+.ul-interests ul {
+  padding-left: 1.4rem;
+  list-style: circle;
+}
+
+/* ---------- experience / teaching / awards: text left, date right ---------- */
+.ul-timeline {
+  padding-left: 1.2rem;
+}
+
+.ul-timeline > li {
+  margin-bottom: 0.35rem;
+}
+
+.tl-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.tl-date {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 575.98px) {
+  .tl-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* ---------- publications ---------- */
+.pub-filter {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  margin: 0.6rem 0 0.4rem;
+  background: #eef0f3;
+  border-radius: 10px;
+}
+
+.pub-filter-btn {
+  border: 0;
+  background: transparent;
+  padding: 6px 18px;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.pub-filter-btn:hover {
+  color: #1f2937;
+}
+
+.pub-filter-btn.active {
+  background: #fff;
+  color: #111827;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.pub-filter-btn:focus-visible {
+  outline: 2px solid #2962ff;
+  outline-offset: 2px;
+}
+
+.pub-type {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  margin: 1.8rem 0 0;
+}
+
+.ul-papers {
+  padding-left: 0;
+}
+
+.ul-papers li {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  padding-top: 22px;
+}
+
+.ul-papers li .description {
+  flex: 1;
+  min-width: 0;
+  display: block;
+}
+
+/* representative figure on the left (desktop); stacks above the text on phones */
+.pub-thumb {
+  flex: 0 0 200px;
+  height: 130px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 6px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.pub-thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.pub-thumb-empty {
+  color: #c4c9d0;
+  font-size: 2rem;
+}
+
+@media (max-width: 575.98px) {
+  .ul-papers li {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pub-thumb {
+    flex-basis: auto;
+    width: 100%;
+    height: 170px;
+  }
+
+  .pub-thumb:has(.pub-thumb-empty) {
+    display: none !important;
+  }
+}
+
+.ul-papers li .description p.title {
+  color: #1a1a1a;
+}
+
+.pub-note {
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.pub-award {
+  color: #ff5a5f;
+  font-weight: 700;
+  margin-left: 0.25rem;
+}
+
+.ul-papers .resources {
+  margin-top: 0.35rem !important;
+}
+
+.pill {
+  display: inline-block;
+  padding: 2px 12px;
+  border-radius: 999px;
+  border: 1px solid #c5cad0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #374151;
+  background: #f6f7f9;
+}
+
+.pill:hover {
+  text-decoration: none;
+  border-color: #2962ff;
+  color: #2962ff;
+  background: #fff;
+}
+
+.pub-hidden {
+  display: none !important;
+}
+
+/* ---------- skills ---------- */
+.ul-skills {
+  padding-left: 1.2rem;
+}
+
+ul.ul-interests li {
+  font-size: 1rem; /* theme sets 0.9rem for this list */
+}

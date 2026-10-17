@@ -1,0 +1,246 @@
+---
+# Home page. Content lives in _data/cv.yml and _data/publications.yml.
+---
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+  <title>{{ site.title }}</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  <link rel="stylesheet" href="./css/academic.css">
+  <link rel="stylesheet" href="./css/custom.css?v={{ site.time | date: '%s' }}">
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main">
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="./">Gyumin Kim</a>
+    </div>
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+    </button>
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="./">Gyumin Kim</a>
+    </div>
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+      <ul class="navbar-nav d-md-inline-flex">
+        <li class="nav-item"><a class="nav-link" href="#about"><span>Home</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#news"><span>News</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#research"><span>Research</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience"><span>Experience</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#papers"><span>Publications</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#teaching"><span>Teaching</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#awards"><span>Awards &amp; Honors</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+{% assign cv = site.data.cv %}
+
+<!-- Home -->
+<section id="about" class="home-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <div id="profile">
+          <img class="avatar avatar-circle" src="./images/profile.jpg" alt="Gyumin Kim">
+          <div class="portrait-title">
+            <h2>Gyumin Kim</h2>
+            <h3>M.S.–Ph.D. Student</h3>
+            <h3><a href="https://sites.google.com/view/unist-seda" target="_blank" rel="noopener">SeDA Lab, UNIST</a></h3>
+          </div>
+          <p class="profile-links">
+            <a href="./cv/Gyumin_Kim_CV.pdf" target="_blank" rel="noopener"><b>CV</b></a>
+            <a href="./cv/Gyumin_Kim_CV.pdf" download="Gyumin_Kim_CV.pdf" title="Download CV (PDF)" aria-label="Download CV (PDF)"><i class="fas fa-download"></i></a>
+            | <a href="https://scholar.google.com/citations?user=bqSVJPQAAAAJ" target="_blank" rel="noopener"><b>Google Scholar</b></a>
+            | <a href="https://www.linkedin.com/in/q-min" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-8">
+        <p>
+          I am an integrated M.S.–Ph.D. student in Electrical Engineering at the
+          <a href="https://www.unist.ac.kr" target="_blank" rel="noopener"><b>Ulsan National Institute of Science and Technology (UNIST)</b></a>,
+          advised by Prof. <a href="https://sites.google.com/view/unist-seda" target="_blank" rel="noopener"><b>Heechun Park</b></a>
+          in the Semiconductor Design Automation (SeDA) Lab. I received the B.S. degree in Electrical Engineering
+          from Kookmin University in 2024.
+        </p>
+        <p>
+          My research focuses on <b>physical design methodologies for 3D integration</b>, including face-to-face (F2F)
+          hybrid bonding, monolithic 3D (M3D) ICs, and heterogeneous 3D ICs; <b>backside power and clock delivery</b>
+          for advanced technology nodes; and <b>machine learning for electronic design automation (ML-EDA)</b>, with
+          reinforcement learning and graph neural networks for physical design.
+          I received the <b>Best Paper Award</b> at MLCAD 2026.
+        </p>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Contact</h3>
+            <ul class="ul-contact fa-ul">
+              <li>
+                <i class="fa-li fas fa-envelope"></i>
+                <div class="description"><p class="course">q.min@unist.ac.kr</p></div>
+              </li>
+              <li>
+                <i class="fa-li fas fa-map-marker-alt"></i>
+                <div class="description"><p class="course">UNIST, Ulsan, Republic of Korea</p></div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h3>Education</h3>
+            <ul class="ul-edu fa-ul">
+              {% for e in cv.education %}
+              <li>
+                <i class="fa-li fas fa-graduation-cap"></i>
+                <div class="description">
+                  <p class="course">{{ e.degree }}</p>
+                  <p class="institution">{{ e.date }}</p>
+                  <p class="institution">{{ e.school }}</p>
+                  {% if e.details %}<p class="institution">{{ e.details }}</p>{% endif %}
+                </div>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- News -->
+<section id="news" class="home-section">
+  <div class="container">
+    <h3>Recent News</h3>
+    <ul class="ul-news">
+      {% for n in cv.news %}
+      <li><span class="news-date">[{{ n.date }}]</span> {{ n.text }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<!-- Research interests -->
+<section id="research" class="home-section">
+  <div class="container">
+    <h1>Research Interests</h1>
+    <ul class="ul-interests">
+      {% for r in cv.interests %}
+      <li>
+        <b>{{ r.title }}</b>
+        {% if r.items %}
+        <ul>
+          {% for i in r.items %}<li>{{ i }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="home-section">
+  <div class="container">
+    <h1>Research Experience</h1>
+    <ul class="ul-timeline">
+      {% for x in cv.experience %}
+      <li>
+        <div class="tl-row"><span><b>{{ x.org }}</b>, {{ x.place }}</span><span class="tl-date">{{ x.date }}</span></div>
+        <div>{{ x.role }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<!-- Publications -->
+<section id="papers" class="home-section">
+  <div class="container">
+    <h1>Publications</h1>
+    <div class="pub-filter" role="group" aria-label="Filter publications">
+      <button type="button" class="pub-filter-btn active" data-filter="all">All</button>
+      <button type="button" class="pub-filter-btn" data-filter="first">First Author</button>
+    </div>
+
+    {% assign groups = "journal:Journal Articles,conference:Conference Papers" | split: "," %}
+    {% for g in groups %}
+      {% assign gtype = g | split: ":" | first %}
+      {% assign glabel = g | split: ":" | last %}
+      {% assign gpubs = site.data.publications | where: "type", gtype %}
+      {% if gpubs.size > 0 %}
+      <div class="pub-group">
+        <h2 class="pub-type">{{ glabel }}</h2>
+        <ul class="ul-papers">
+          {% for p in gpubs %}
+          <li{% if p.first_author %} class="first-author"{% endif %}>
+            <div class="pub-thumb">
+              {% if p.image %}<img src="./{{ p.image }}" alt="Representative figure" loading="lazy">{% else %}<span class="pub-thumb-empty"><i class="far fa-file-alt"></i></span>{% endif %}
+            </div>
+            <div class="description">
+              <p class="title">{{ p.title }}</p>
+              <p class="authors">{{ p.authors | replace: "Gyumin Kim", "<b>Gyumin Kim</b>" }}</p>
+              <p class="venue">{{ p.venue }}{% if p.note %} <span class="pub-note">({{ p.note }})</span>{% endif %}{% if p.award %} <span class="pub-award"><i class="fas fa-award"></i> {{ p.award }}</span>{% endif %}</p>
+              {% if p.doi %}
+              <p class="resources"><a class="pill" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a></p>
+              {% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Teaching -->
+<section id="teaching" class="home-section">
+  <div class="container">
+    <h1>Teaching</h1>
+    <ul class="ul-timeline">
+      {% for t in cv.teaching %}
+      <li>
+        <div class="tl-row"><span><b>{{ t.course }}</b>, {{ t.place }}</span><span class="tl-date">{{ t.date }}</span></div>
+        <div>{{ t.role }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<!-- Awards & skills -->
+<section id="awards" class="home-section">
+  <div class="container">
+    <h1>Awards &amp; Honors</h1>
+    <ul class="ul-timeline">
+      {% for a in cv.awards %}
+      <li><div class="tl-row"><span>{{ a.text }}</span><span class="tl-date">{{ a.date }}</span></div></li>
+      {% endfor %}
+    </ul>
+
+    <h1 class="mt-5">Skills</h1>
+    <ul class="ul-skills">
+      {% for s in cv.skills %}
+      <li><b>{{ s.name }}:</b> {{ s.items }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="./js/site.js"></script>
+</body>
+</html>

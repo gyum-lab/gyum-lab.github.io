@@ -1,37 +1,65 @@
-# Content of the CV page (_pages/cv.md). Dates are shown as written.
+# Everything on the home page except publications (see publications.yml).
+
+news:
+  - date: Sep 2026
+    text: Received the <b>Best Paper Award</b> at <b>MLCAD 2026</b>.
+  - date: Sep 2025
+    text: Visited Prof. Sung Kyu Lim's group at <b>USC</b> as a visiting researcher.
+  - date: Sep 2024
+    text: Started the integrated M.S.–Ph.D. program at <b>UNIST</b>.
+
+interests:
+  - title: Physical design methodologies for 3D integration
+    items:
+      - Hybrid-bonded face-to-face (F2F) 3D ICs — tier partitioning and 3D via legalization
+      - Unified design flows for homogeneous and heterogeneous 3D ICs
+      - Monolithic 3D ICs — thermal-aware placement and cross-tier routability
+  - title: Backside design methodologies for advanced technology nodes
+    items:
+      - Backside power delivery network (BS-PDN) optimization for F2F 3D ICs
+      - Backside clock distribution network (BS-CDN) synthesis
+  - title: Machine learning for electronic design automation (ML-EDA)
+    items:
+      - Reinforcement learning for routing congestion mitigation and 3D via legalization
+      - Graph neural networks for physical design optimization
+      - Learning-based prediction for placement refinement and thermal analysis
+
 education:
-  - date: Sep 2024 – Present
-    title: M.S.–Ph.D. Integrated Program in Electrical Engineering
-    org: Ulsan National Institute of Science and Technology (UNIST)
-    details: "Semiconductor Design Automation (SeDA) Lab, advisor: Prof. Heechun Park"
-  - date: Aug 2024
-    title: B.S. in Electrical Engineering
-    org: Kookmin University
+  - degree: M.S.–Ph.D. Integrated Program in Electrical Engineering
+    date: Sep 2024 – Present
+    school: Ulsan National Institute of Science and Technology (UNIST)
+    details: "Advisor: Prof. Heechun Park"
+  - degree: B.S. in Electrical Engineering
+    date: Aug 2024
+    school: Kookmin University
 
 experience:
-  - date: Sep 2025 – Oct 2025
-    title: Visiting Researcher
-    org: Dept. of Electrical and Computer Engineering, University of Southern California (USC)
-    details: "Two-week research visit for collaboration with Prof. Sung Kyu Lim (Sep 22 – Oct 4, 2025)"
-  - date: Mar 2024 – Aug 2024
-    title: Visiting Researcher
-    org: SeDA Lab, UNIST
-    details: "Advisor: Prof. Heechun Park"
-  - date: Sep 2023 – Feb 2024
-    title: Undergraduate Researcher
-    org: SeDA Lab, Kookmin University
-    details: "Advisor: Prof. Heechun Park"
+  - org: SeDA Lab, UNIST
+    place: Ulsan, Korea
+    date: Sep 2024 – Present
+    role: "Graduate Researcher (Advisor: Prof. Heechun Park)"
+  - org: Dept. of Electrical and Computer Engineering, University of Southern California
+    place: Los Angeles, CA
+    date: Sep 2025 – Oct 2025
+    role: "Visiting Researcher (Host: Prof. Sung Kyu Lim), two-week research visit"
+  - org: SeDA Lab, UNIST
+    place: Ulsan, Korea
+    date: Mar 2024 – Aug 2024
+    role: "Visiting Researcher (Advisor: Prof. Heechun Park)"
+  - org: SeDA Lab, Kookmin University
+    place: Seoul, Korea
+    date: Sep 2023 – Feb 2024
+    role: "Undergraduate Researcher (Advisor: Prof. Heechun Park)"
 
 teaching:
-  - date: Fall 2024
-    title: Teaching Assistant
-    org: Digital Logic and Laboratory (EEE20201, EEE20202), UNIST
+  - course: Digital Logic and Laboratory (EEE20201, EEE20202)
+    place: UNIST
+    date: Fall 2024
+    role: Teaching Assistant
 
 awards:
   - date: Sep 2026
-    title: Best Paper Award, MLCAD 2026
-    org: ACM/IEEE International Symposium on Machine Learning for CAD (MLCAD)
-    details: '"Segment-Level Rerouting with Reinforcement Learning for Routing Congestion Mitigation"'
+    text: <b>Best Paper Award</b>, ACM/IEEE International Symposium on Machine Learning for CAD (MLCAD) 2026
 
 skills:
   - name: EDA Tools

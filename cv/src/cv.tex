@@ -1,0 +1,146 @@
+% Gyumin Kim — CV
+% Overleaf-ready: upload this folder (cv.tex) and compile with pdfLaTeX.
+% The compiled PDF is linked from the website as cv/Gyumin_Kim_CV.pdf.
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=2cm,top=1.8cm,bottom=1.8cm]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{1F3A93}
+\definecolor{muted}{HTML}{555555}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+
+% Section style: small caps title with a thin rule
+\titleformat{\section}{\large\scshape\color{accent}}{}{0pt}{}[\vspace{1pt}{\color{accent}\titlerule}]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% One entry: bold title, right-aligned date, then lines below
+\newcommand{\entry}[3]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & {\color{muted}#2} \\
+  \end{tabularx}\\[-1pt]
+  #3\par\vspace{5pt}}
+
+\newcommand{\me}{\textbf{Gyumin Kim}}
+\newcommand{\pubnote}[1]{{\color{muted}(#1)}}
+
+\setlist[itemize]{leftmargin=1.2em,itemsep=1pt,topsep=2pt}
+\setlist[enumerate]{leftmargin=2.2em,itemsep=4pt,topsep=2pt}
+
+\begin{document}
+
+% ---------------- Header ----------------
+\begin{center}
+  {\LARGE\textbf{Gyumin Kim}}\\[4pt]
+  M.S.--Ph.D. Student, Semiconductor Design Automation (SeDA) Lab, UNIST\\[2pt]
+  {\small
+    \href{mailto:q.min@unist.ac.kr}{q.min@unist.ac.kr} \quad$\cdot$\quad
+    \href{https://gyum-lab.github.io}{gyum-lab.github.io} \quad$\cdot$\quad
+    \href{https://scholar.google.com/citations?user=bqSVJPQAAAAJ}{Google Scholar} \quad$\cdot$\quad
+    \href{https://www.linkedin.com/in/q-min}{LinkedIn}}
+\end{center}
+
+% ---------------- Research interests ----------------
+\section{Research Interests}
+\begin{itemize}
+  \item \textbf{Physical design methodologies for 3D integration} --- hybrid-bonded F2F 3D ICs
+        (tier partitioning, 3D via legalization), unified flows for homogeneous and heterogeneous 3D ICs,
+        monolithic 3D ICs (thermal-aware placement, cross-tier routability)
+  \item \textbf{Backside design methodologies for advanced technology nodes} --- backside power delivery
+        network (BS-PDN) optimization for F2F 3D ICs, backside clock distribution network (BS-CDN) synthesis
+  \item \textbf{Machine learning for EDA (ML-EDA)} --- reinforcement learning for routing congestion mitigation
+        and 3D via legalization, graph neural networks for physical design, learning-based prediction for
+        placement refinement and thermal analysis
+\end{itemize}
+
+% ---------------- Education ----------------
+\section{Education}
+\entry{Ulsan National Institute of Science and Technology (UNIST)}{Sep 2024 -- Present}{%
+  M.S.--Ph.D. Integrated Program in Electrical Engineering\\
+  {\color{muted}Semiconductor Design Automation (SeDA) Lab, Advisor: Prof. Heechun Park}}
+\entry{Kookmin University}{Aug 2024}{%
+  B.S. in Electrical Engineering}
+
+% ---------------- Research experience ----------------
+\section{Research Experience}
+\entry{SeDA Lab, UNIST, Ulsan, Korea}{Sep 2024 -- Present}{%
+  Graduate Researcher (Advisor: Prof. Heechun Park)}
+\entry{Dept. of ECE, University of Southern California, Los Angeles, CA}{Sep 2025 -- Oct 2025}{%
+  Visiting Researcher (Host: Prof. Sung Kyu Lim), two-week research visit (Sep 22 -- Oct 4, 2025)}
+\entry{SeDA Lab, UNIST, Ulsan, Korea}{Mar 2024 -- Aug 2024}{%
+  Visiting Researcher (Advisor: Prof. Heechun Park)}
+\entry{SeDA Lab, Kookmin University, Seoul, Korea}{Sep 2023 -- Feb 2024}{%
+  Undergraduate Researcher (Advisor: Prof. Heechun Park)}
+
+% ---------------- Publications ----------------
+\section{Publications}
+\textbf{Journal Articles}
+\begin{enumerate}[label={[J\arabic*]}]
+  \item H. Jung, J. Choi, S. Baek, B. G. Shin, Y. J. Song*, H. Jung, J. Kim, J. Jeon*, \me, Heechun Park*,
+        Y. Lee, J. Yoo*, J.-H. Lee, H. Kim, K. Kang*, J. Jeong, S. H. Kim*, J. Bae, C. S. Kim, W. K. Yang,
+        S. Lee, J. Kwon*, B.-S. Kim, J.-H. Han*, H.-J. Kim, H. H. Yoon*, J. Kwon*, and Y. J. Hong*,
+        ``Advances and Future Challenges in Monolithic 3D Integrated Logic, Power, and Optoelectronics
+        Technologies for Tightly Interconnected Intelligent Systems,''
+        \textit{ACS Nano}, vol.~20, no.~8, pp.~6407--6445, 2026.
+\end{enumerate}
+
+\vspace{4pt}
+\textbf{Conference Papers}
+\begin{enumerate}[label={[C\arabic*]}]
+  \item \me{} and Heechun Park, ``Power Network Topology Optimization for Top Dies in Backside-Powered
+        F2F 3D ICs,'' \textit{IEEE/ACM Asia and South Pacific Design Automation Conference (ASP-DAC)},
+        2027. \pubnote{Accepted}
+  \item Ikkyum Kim, Junghyun Yoon, \me, Jooyeon Jeong, and Heechun Park, ``Comprehensive BS-CDN Synthesis
+        Framework with GNN Clustering and MILP-Based Optimization,'' \textit{IEEE/ACM International
+        Conference on Computer-Aided Design (ICCAD)}, 2026. \pubnote{Accepted}
+  \item \me{} and Heechun Park, ``Differentiable Thermal-Aware Placement for Monolithic 3D ICs with
+        Stack-Aware Thermal Modeling,'' \textit{IEEE/ACM International Conference on Computer-Aided
+        Design (ICCAD)}, 2026. \pubnote{Accepted}
+  \item \me{} and Heechun Park, ``Prediction-Guided Placement Refinement for Cross-Tier Routability in
+        Monolithic 3D ICs,'' \textit{ACM/IEEE International Symposium on Machine Learning for CAD
+        (MLCAD)}, 2026.
+  \item \me{} and Heechun Park, ``Segment-Level Rerouting with Reinforcement Learning for Routing
+        Congestion Mitigation,'' \textit{ACM/IEEE International Symposium on Machine Learning for CAD
+        (MLCAD)}, 2026. \textbf{(Best Paper Award)}
+  \item Junghyun Yoon, Ikkyum Kim, \me, Sojung Park, and Heechun Park, ``Standard Cell Layout Generation:
+        Methodological Evolution and Architectural Impacts,'' \textit{IEEE/ACM Asia and South Pacific
+        Design Automation Conference (ASP-DAC)}, 2026.
+  \item \me{} and Heechun Park, ``A Unified Design Flow for Homogeneous and Heterogeneous 3D Integration
+        with Fine-Pitch Hybrid Bonding,'' \textit{IEEE/ACM International Conference on Computer-Aided
+        Design (ICCAD)}, 2025.
+  \item \me{} and Heechun Park, ``Clustering-Driven Bonding Terminal Legalization with Reinforcement
+        Learning for F2F 3D ICs,'' \textit{IEEE/ACM Asia and South Pacific Design Automation Conference
+        (ASP-DAC)}, 2025.
+\end{enumerate}
+
+% ---------------- Teaching ----------------
+\section{Teaching}
+\entry{Digital Logic and Laboratory (EEE20201, EEE20202), UNIST}{Fall 2024}{%
+  Teaching Assistant}
+
+% ---------------- Awards ----------------
+\section{Honors \& Awards}
+\entry{Best Paper Award, MLCAD 2026}{Sep 2026}{%
+  ACM/IEEE International Symposium on Machine Learning for CAD (MLCAD)\\
+  {\color{muted}``Segment-Level Rerouting with Reinforcement Learning for Routing Congestion Mitigation''}}
+
+% ---------------- Skills ----------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l@{\hspace{1em}}X@{}}
+  \textbf{EDA Tools}   & Cadence Innovus, Genus, Celsius; Synopsys ICC2, Design Compiler, PrimeTime, VCS, Verdi \\
+  \textbf{Programming} & Python, C/C++, Tcl, PyTorch \\
+  \textbf{Tools \& OS} & Linux \\
+\end{tabularx}
+
+\end{document}
