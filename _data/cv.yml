@@ -6,9 +6,13 @@ news:
   - date: Sep 2026
     text: 🎉 Our paper on power network topology optimization for backside-powered F2F 3D ICs has been accepted to <b>ASP-DAC 2027</b>!
   - date: Jul 2026
-    text: 🎉 <b>Two papers</b> have been accepted to <b>ICCAD 2026</b>!
+    text: 🎉 Our paper on differentiable thermal-aware placement for monolithic 3D ICs has been accepted to <b>ICCAD 2026</b>!
   - date: Jul 2026
-    text: 🎉 <b>Two first-author papers</b> have been accepted to <b>MLCAD 2026</b>, one nominated for the Best Paper Award!
+    text: 🎉 Our collaborative paper on backside clock distribution network (BS-CDN) synthesis has been accepted to <b>ICCAD 2026</b>!
+  - date: Jul 2026
+    text: 🎉 Our paper on prediction-guided placement refinement for cross-tier routability in monolithic 3D ICs has been accepted to <b>MLCAD 2026</b>!
+  - date: Jul 2026
+    text: 🎉 Our paper on RL-based segment-level rerouting has been accepted to <b>MLCAD 2026</b> and nominated for the Best Paper Award!
   - date: Feb 2026
     text: 🎉 Our collaborative paper on monolithic 3D integration has been accepted to <b>ACS Nano</b>!
   - date: Nov 2025
