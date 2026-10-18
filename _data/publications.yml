@@ -1,5 +1,6 @@
 # Publications, newest first. Rendered by index.html.
 #   short:        venue shown in bold on the page, e.g. ICCAD 2026 (venue keeps the full name)
+#   track:        optional, e.g. Special Session (shown after the venue)
 #   type:         journal | conference
 #   first_author: true shows the paper under the "First Author" filter
 #   note:         e.g. Accepted (conference not held yet); shown after the venue
@@ -62,6 +63,7 @@
   authors: "Junghyun Yoon, Ikkyum Kim, Gyumin Kim, Sojung Park, and Heechun Park"
   venue: "IEEE/ACM Asia and South Pacific Design Automation Conference (ASP-DAC), 2026"
   short: "ASP-DAC 2026"
+  track: Special Session
   type: conference
   doi: 10.1109/ASP-DAC66049.2026.11420759
   image: images/papers/aspdac26_stdcell.jpg
@@ -79,6 +81,7 @@
   authors: "Gyumin Kim and Heechun Park"
   venue: "IEEE/ACM Asia and South Pacific Design Automation Conference (ASP-DAC), 2025"
   short: "ASP-DAC 2025"
+  track: Special Session
   type: conference
   first_author: true
   doi: 10.1145/3658617.3703136

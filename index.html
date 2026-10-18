@@ -172,7 +172,7 @@
           <div class="description">
             <p class="title">{{ p.title }}</p>
             <p class="authors">{{ p.authors | replace: "Gyumin Kim", "<b>Gyumin Kim</b>" }}</p>
-            <p class="venue">{{ p.short }}{% if p.note %} <span class="pub-note">🎉 {{ p.note }}</span>{% endif %}{% if p.award %} <span class="pub-award">🏆 {{ p.award }}</span>{% endif %}</p>
+            <p class="venue">{{ p.short }}{% if p.track %} <span class="pub-track">({{ p.track }})</span>{% endif %}{% if p.note %} <span class="pub-note">🎉 {{ p.note }}</span>{% endif %}{% if p.award %} <span class="pub-award">🏆 {{ p.award }}</span>{% endif %}</p>
             {% if p.doi %}
             <p class="resources"><a class="pill" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a></p>
             {% endif %}
