@@ -17,7 +17,6 @@ Almost everything on the page lives in two data files, so most edits never touch
 | Greeting and bio paragraphs, contact info, profile links | `index.html` (the `#about` section) |
 | Profile photo | `images/profile.jpg` (square) |
 | Styles | `css/custom.css` (do not edit `css/academic.css`) |
-| Tab icon | `favicon.svg` |
 
 ### Publication fields
 
