@@ -13,6 +13,7 @@
   short: "ACS Nano 2026"
   type: journal
   doi: 10.1021/acsnano.5c15601
+  image: images/papers/acsnano26_m3d.jpg
 
 - title: "Power Network Topology Optimization for Top Dies in Backside-Powered F2F 3D ICs"
   authors: "Gyumin Kim and Heechun Park"
@@ -29,6 +30,7 @@
   short: "ICCAD 2026"
   type: conference
   note: Accepted
+  image: images/papers/iccad26_bscdn.jpg
 
 - title: "Differentiable Thermal-Aware Placement for Monolithic 3D ICs with Stack-Aware Thermal Modeling"
   authors: "Gyumin Kim and Heechun Park"
@@ -62,6 +64,7 @@
   short: "ASP-DAC 2026"
   type: conference
   doi: 10.1109/ASP-DAC66049.2026.11420759
+  image: images/papers/aspdac26_stdcell.jpg
 
 - title: "A Unified Design Flow for Homogeneous and Heterogeneous 3D Integration with Fine-Pitch Hybrid Bonding"
   authors: "Gyumin Kim and Heechun Park"
