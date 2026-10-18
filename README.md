@@ -25,7 +25,6 @@ Almost everything on the page lives in two data files, so most edits never touch
   authors: "Gyumin Kim and Heechun Park"   # "Gyumin Kim" is bolded automatically
   venue: "Full venue name, year"
   short: "ICCAD 2026"                      # shown in bold on the page
-  track: Special Session                   # optional; shown in gray after the venue
   type: conference                         # journal | conference
   first_author: true                       # optional
   note: Accepted                           # optional; shown as "🎉 Accepted"
