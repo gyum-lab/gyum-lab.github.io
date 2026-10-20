@@ -18,7 +18,7 @@ news:
   - date: Nov 2025
     text: 🎉 Our paper on standard cell layout generation has been accepted to <b>ASP-DAC 2026</b>!
   - date: Sep 2025
-    text: ✈️ Visited Prof. Sung Kyu Lim's group at <b>USC</b> as a visiting researcher.
+    text: ✈️ Joined Prof. Sung Kyu Lim's group at <b>USC</b> as a visiting researcher.
   - date: Jul 2025
     text: 🎉 Our paper on a unified 3D IC design flow with fine-pitch hybrid bonding has been accepted to <b>ICCAD 2025</b>!
   - date: Oct 2024
@@ -43,7 +43,7 @@ interests:
       - Learning-based design quality prediction
 
 education:
-  - degree: M.S.–Ph.D. Integrated Program in Electrical Engineering
+  - degree: Integrated M.S.–Ph.D. Program in Electrical Engineering
     date: Sep 2024 – Present
     school: Ulsan National Institute of Science and Technology (UNIST)
     details: "Advisor: Prof. Heechun Park"
@@ -59,7 +59,7 @@ experience:
   - org: Dept. of Electrical and Computer Engineering, University of Southern California
     place: Los Angeles, CA
     date: Sep 2025 – Oct 2025
-    role: "Visiting Researcher (Host: Prof. Sung Kyu Lim), two-week research visit"
+    role: "Visiting Researcher (Host: Prof. Sung Kyu Lim; two-week visit)"
   - org: SeDA Lab, UNIST
     place: Ulsan, Korea
     date: Mar 2024 – Aug 2024
@@ -84,5 +84,5 @@ skills:
     items: Cadence Innovus, Cadence Genus, Cadence Celsius, Synopsys ICC2, Synopsys Design Compiler, Synopsys PrimeTime, Synopsys VCS, Synopsys Verdi
   - name: Programming
     items: Python, C/C++, Tcl, PyTorch
-  - name: Tools & OS
+  - name: OS
     items: Linux
